@@ -10,6 +10,6 @@ app.get('/?', (req, res, next) => {
 });
 console.log('Server intialized; about to listen...')
 
-let server = app.listen(9000, () => {
+let server = app.listen(process.env.PORT || 9000, () => {
   console.log('Server listening at http://locahost:' + server.address().port)
 })

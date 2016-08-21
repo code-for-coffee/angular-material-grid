@@ -1,12 +1,12 @@
 'use strict'
 
-let gulp 			= require('gulp'),
-		browserify 	= require('browserify'),
-		babelify 		= require('babelify'),
-		source 			= require('vinyl-source-stream'),
-		watch 			= require('gulp-watch'),
-		less     		= require('gulp-less'),
-		gls					= require('gulp-live-server');
+let gulp 		= require('gulp'),
+	browserify 	= require('browserify'),
+	babelify 	= require('babelify'),
+	source 		= require('vinyl-source-stream'),
+	watch 		= require('gulp-watch'),
+	less     	= require('gulp-less'),
+	gls			= require('gulp-live-server');
 
 watch(['./src/*.js',
 				'./src/*.less',
