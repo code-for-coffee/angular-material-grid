@@ -1,0 +1,27 @@
+<md-dialog aria-label="Photo Popup">
+  <form ng-cloak>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2># {{item.id}} - {{item.title}}</h2>
+        <span flex></span>
+      </div>
+    </md-toolbar>
+    <md-dialog-content>
+      <div class="md-dialog-content">
+        <h2>{{title}}</h2>
+        <md-input-container>
+          <input type="hidden" ng-value="{{item.id}}" />
+          <input ng-model="description" type="text" placeholder="Enter a description here" />
+        </md-input-container>
+      </div>
+        <img style="margin: auto; max-width: 100%;" alt="Lush mango tree" ng-src="{{item.url}}">
+        
+    </md-dialog-content>
+    <md-dialog-actions layout="row">
+      <span flex></span>
+      <md-button ng-click="save(description)">
+       Save
+      </md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>
